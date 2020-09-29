@@ -45,21 +45,16 @@ public class Main {
             System.out.println("7) FileNotFoundException");
             System.out.println("8) FileNotFoundException (fixed)");
             System.out.println("9) IOException");
-            System.out.println("10) IOException (fixed)");
-            System.out.println("11) InterruptedException");
-            System.out.println("12) InterruptedException (fixed)");
-            System.out.println("13) NoSuchFieldException");
-            System.out.println("14) NoSuchFieldException (fixed)");
-            System.out.println("15) NoSuchMethodException");
-            System.out.println("16) NoSuchMethodException (fixed)");
-            System.out.println("17) NullPointerException");
-            System.out.println("18) NullPointerException (fixed)");
-            System.out.println("19) NumberFormatException");
-            System.out.println("20) NumberFormatException (fixed)");
-            System.out.println("21) RuntimeException");
-            System.out.println("22) RuntimeException (fixed)");
-            System.out.println("23) StringIndexOutOfBoundsException");
-            System.out.println("24) StringIndexOutOfBoundsException (fixed)");
+            System.out.println("10) InterruptedException");
+            System.out.println("11) NoSuchFieldException");
+            System.out.println("12) NoSuchMethodException");
+            System.out.println("13) NullPointerException");
+            System.out.println("14) NullPointerException (fixed)");
+            System.out.println("15) NumberFormatException");
+            System.out.println("16) NumberFormatException (fixed)");
+            System.out.println("17) RuntimeException");
+            System.out.println("18) StringIndexOutOfBoundsException");
+            System.out.println("19) StringIndexOutOfBoundsException (fixed)");
 
         }else if(usrIn == 1){
             System.out.println("\nYou chose: 1) ArithmeticException");
@@ -95,7 +90,7 @@ public class Main {
 
         }else if(usrIn == 5){
             System.out.println("\nYou chose: 5) ClassNotFoundException");
-            System.out.println("Something like:\nClass<?> newClass = Class.forName(CLASS_TO_LOAD)\nwill cause an error without a catch");
+            System.out.println("Something like:\n\nClass<?> newClass = Class.forName(CLASS_TO_LOAD);\n\nwill cause an error without a catch");
             System.out.println("because it is a checked exception.");
 
         }else if(usrIn == 6){
@@ -129,28 +124,28 @@ public class Main {
             System.out.println("exception in the input or output (IO), includes many other exceptions:");
             System.out.println("ChangedCharSetException, CharacterCodingException, CharConversionException, \nClosedChannelException, EOFException, FileLockInterruptionException, \nFileNotFoundException, FilerException, FileSystemException, \nHttpRetryException, IIOException, InterruptedByTimeoutException, \nInterruptedIOException, InvalidPropertiesFormatException, JMXProviderException, \nJMXServerErrorException, MalformedURLException, ObjectStreamException, \nProtocolException, RemoteException, SaslException, SocketException, \nSSLException, SyncFailedException, UnknownHostException, UnknownServiceException, \nUnsupportedDataTypeException, UnsupportedEncodingException, UserPrincipalNotFoundException, \nUTFDataFormatException, ZipException");
 
-        }else if(usrIn == 11){
-            System.out.println("\nyou chose: 11) InterruptedException");
+        }else if(usrIn == 10){
+            System.out.println("\nyou chose: 10) InterruptedException");
             System.out.println("This would be an infinite loop that you somehow enabled or forgot to fix.");
             System.out.println("There are many ways to fix this, including catching and throwing the exception. \nMore detailed information at https://dzone.com/articles/how-to-handle-the-interruptedexception.");
 
-        }else if(usrIn == 13){
-            System.out.println("\nYou chose: 13) NoSuchFieldException");
+        }else if(usrIn == 11){
+            System.out.println("\nYou chose: 11) NoSuchFieldException");
             System.out.println("This exception is thrown when you try to access a field \nin a method and nothing is provided/ found. ");
 
-        }else if(usrIn == 15){
-            System.out.println("\nYou chose: 15) NoSuchMethodException");
+        }else if(usrIn == 12){
+            System.out.println("\nYou chose: 12) NoSuchMethodException");
             System.out.println("This is thrown when you attempt to call a method that does not exist or cannot be found. \nThis is a checked exception and the code will not run without a catch or a direct fix.");
 
-        }else if(usrIn == 17){
-            System.out.println("\nYou chose: 17) NullPointerException");
+        }else if(usrIn == 13){
+            System.out.println("\nYou chose: 13) NullPointerException");
             System.out.println("This exception is raised when referring to the members of a null object.");
             System.out.println("Outputs: ");
             String a = null; //null value
             System.out.println(a.charAt(0));
 
-        }else if(usrIn == 18){
-            System.out.println("\nYou chose: 18) NullPointerException (fixed)");
+        }else if(usrIn == 14){
+            System.out.println("\nYou chose: 14) NullPointerException (fixed)");
             System.out.println("This exception is raised when referring to the members of a null object.");
             System.out.println("Outputs: ");
             try {
@@ -160,15 +155,15 @@ public class Main {
                 System.out.println("NullPointerException..");
             }
 
-        }else if(usrIn == 19){
-            System.out.println("\nYou chose: 19) NumberFormatException");
+        }else if(usrIn == 15){
+            System.out.println("\nYou chose: 15) NumberFormatException");
             System.out.println("This exception is raised when a method could not convert a string into a numeric format.");
             System.out.println("Outputs: ");
             int num = Integer.parseInt("hello");
             System.out.println(num);
 
-        }else if(usrIn == 20){
-            System.out.println("\nYou chose: 20) NumberFormatException (fixed)");
+        }else if(usrIn == 16){
+            System.out.println("\nYou chose: 16) NumberFormatException (fixed)");
             try {
                 int num = Integer.parseInt ("hello");
                 System.out.println(num);
@@ -176,21 +171,21 @@ public class Main {
                 System.out.println(e);
             }
 
-        }else if(usrIn == 21){
-            System.out.println("\nYou chose: 21) RuntimeException");
+        }else if(usrIn == 17){
+            System.out.println("\nYou chose: 17) RuntimeException");
             System.out.println("This represents any exception which occurs during runtime. These include: \n");
             System.out.println("AnnotationTypeMismatchException, ArithmeticException, ArrayStoreException, \nBufferOverflowException, BufferUnderflowException, CannotRedoException, \nCannotUndoException, ClassCastException, CMMException, \nConcurrentModificationException, DataBindingException, DOMException, \nEmptyStackException, EnumConstantNotPresentException, EventException, \nFileSystemAlreadyExistsException, FileSystemNotFoundException, IllegalArgumentException, \nIllegalMonitorStateException, IllegalPathStateException, IllegalStateException, \nIllformedLocaleException, ImagingOpException, IncompleteAnnotationException, \nIndexOutOfBoundsException, JMRuntimeException, LSException, \nMalformedParameterizedTypeException, MirroredTypesException, MissingResourceException, \nNegativeArraySizeException, NoSuchElementException, NoSuchMechanismException, \nNullPointerException, ProfileDataException, ProviderException, \nProviderNotFoundException, RasterFormatException, RejectedExecutionException, \nSecurityException, SystemException, TypeConstraintException, \nTypeNotPresentException, UndeclaredThrowableException, UnknownEntityException, \nUnmodifiableSetException, UnsupportedOperationException, WebServiceException, \nWrongMethodTypeException");
 
-        }else if(usrIn == 23){
-            System.out.println("\nYou chose: 23) StringIndexOutOfBoundsException");
+        }else if(usrIn == 18){
+            System.out.println("\nYou chose: 18) StringIndexOutOfBoundsException");
             System.out.println("It is thrown by String class methods to indicate that an index is either \nnegative than the size of the string");
             System.out.println("Outputs: ");
             String a = "A very long string I guess?"; // length is 27
             char c = a.charAt(29); // accessing 30th element
             System.out.println(c);
 
-        }else if(usrIn == 24){
-            System.out.println("\nYou chose: 24) StringIndexOutOfBoundsException (fixed)");
+        }else if(usrIn == 19){
+            System.out.println("\nYou chose: 19) StringIndexOutOfBoundsException (fixed)");
             System.out.println("It is thrown by String class methods to indicate that an index is either \nnegative than the size of the string");
             System.out.println("Outputs: ");
             try {
